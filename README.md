@@ -17,3 +17,10 @@
 ```bash
 $ docker-compose up
 ```
+
+## Tips
+- If you want to view the logs directly in the terminal while running docker-compose up, comment out the log volume mount in the docker-compose.yml file as shown below
+
+    ```yml
+    # - ./web/logs:/var/log/apache2
+    ```
